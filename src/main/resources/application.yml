@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: emotion-fix-ai-agent
+  ai:
+    mcp:
+      client:
+        stdio:
+          servers-configuration: classpath:mcp-servers.json
+  profiles:
+    active: local
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+
